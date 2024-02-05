@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:supplier",
+ "creation": "2024-01-27 19:26:03.539906",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "location",
+  "service_related_products_to_be_procured",
+  "column_break_ifhgz",
+  "contact_person",
+  "contact_number",
+  "assessment_information_section",
+  "date_of_assessment",
+  "column_break_p9rj3",
+  "name_of_assessors",
+  "assessment_questionnaire_section",
+  "assessment_questionnaire",
+  "other_details_section",
+  "list_of_employees_interviewed",
+  "list_of_documents_reviewed"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier",
+   "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "service_related_products_to_be_procured",
+   "fieldtype": "Data",
+   "label": "Service related Products to be procured"
+  },
+  {
+   "fieldname": "column_break_ifhgz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Supplier Contact Person"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Supplier Contact Number"
+  },
+  {
+   "fieldname": "assessment_information_section",
+   "fieldtype": "Section Break",
+   "label": "Assessment Information"
+  },
+  {
+   "fieldname": "date_of_assessment",
+   "fieldtype": "Date",
+   "label": "Date of Assessment"
+  },
+  {
+   "fieldname": "column_break_p9rj3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_assessors",
+   "fieldtype": "Data",
+   "label": "Name of Assessors"
+  },
+  {
+   "fieldname": "assessment_questionnaire",
+   "fieldtype": "Table",
+   "label": "Assessment Questionnaire",
+   "options": "Assessment Questionnaire Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "assessment_questionnaire_section",
+   "fieldtype": "Section Break",
+   "label": "Assessment Questionnaire"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "list_of_employees_interviewed",
+   "fieldtype": "Table",
+   "label": "List of Employees interviewed",
+   "options": "Critical Supplier Employees"
+  },
+  {
+   "fieldname": "list_of_documents_reviewed",
+   "fieldtype": "Table",
+   "label": "List of Documents Reviewed",
+   "options": "Critical Supplier Documents"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-28 09:32:39.380992",
+ "modified_by": "Administrator",
+ "module": "NIZWA",
+ "name": "CRITICAL SUPPLIER ASSESSMENT",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

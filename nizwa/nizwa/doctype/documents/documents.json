@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:document_number",
+ "creation": "2024-01-21 12:32:12.896903",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_number",
+  "status",
+  "version",
+  "break1_column",
+  "document_type",
+  "expiry_date",
+  "notification_time",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Valid\nExpired"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Type"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Select",
+   "label": "Version",
+   "options": "Active\nOld"
+  },
+  {
+   "fieldname": "notification_time",
+   "fieldtype": "Data",
+   "label": "How many days before expiry the system will send notification to the followers?"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "break1_column",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-25 18:50:17.727061",
+ "modified_by": "Administrator",
+ "module": "NIZWA",
+ "name": "Documents",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:supplier",
+ "creation": "2024-01-28 09:57:31.249399",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "name_of_company",
+  "physical_address",
+  "phone",
+  "fax",
+  "email",
+  "website",
+  "contact_person",
+  "contact_nos",
+  "established_on",
+  "commercial_registration_section",
+  "registration_no",
+  "column_break_jal4r",
+  "date_of_registration",
+  "is_company_certified",
+  "specify_1",
+  "local_agent",
+  "specify_2",
+  "is_quality_and_hse_policy"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier",
+   "unique": 1
+  },
+  {
+   "fieldname": "name_of_company",
+   "fieldtype": "Data",
+   "label": "Name of Company"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Data",
+   "label": "Physical address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "E-Mail"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "contact_nos",
+   "fieldtype": "Data",
+   "label": "Contact Nos"
+  },
+  {
+   "fieldname": "established_on",
+   "fieldtype": "Date",
+   "label": "Established On"
+  },
+  {
+   "fieldname": "commercial_registration_section",
+   "fieldtype": "Section Break",
+   "label": "Commercial Registration"
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No"
+  },
+  {
+   "fieldname": "column_break_jal4r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_registration",
+   "fieldtype": "Date",
+   "label": "Date of Registration"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_company_certified",
+   "fieldtype": "Check",
+   "label": "Is the company certified to any other Standards like ISO, API and PDO etc.? If yes, do attach a copy"
+  },
+  {
+   "fieldname": "specify_1",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "default": "0",
+   "fieldname": "local_agent",
+   "fieldtype": "Check",
+   "label": "Are they local agent? If yes, do attached product details"
+  },
+  {
+   "fieldname": "specify_2",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_quality_and_hse_policy",
+   "fieldtype": "Check",
+   "label": "Do they have Quality & HSE Policy? If yes, do attach a copy"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-28 10:02:11.700836",
+ "modified_by": "Administrator",
+ "module": "NIZWA",
+ "name": "SUPPLIER ASSESSMENT FORM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
