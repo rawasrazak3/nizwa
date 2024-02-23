@@ -1,0 +1,20 @@
+[
+    {
+     "creation": "2024-02-21 05:39:22.698105",
+     "default_value": null,
+     "doc_type": "Retension",
+     "docstatus": 0,
+     "doctype": "Property Setter",
+     "doctype_or_field": "DocField",
+     "field_name": "rate",
+     "modified": "2024-02-21 05:39:22.698105",
+     "name": "Retention Bonus-rate-reqd",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null,
+     "property": "reqd",
+     "property_type": "Check",
+     "row_name": null,
+     "value": "0"
+    }
+]
