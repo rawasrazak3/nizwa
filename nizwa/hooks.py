@@ -131,7 +131,7 @@ doc_events = {
 	},
     "Contract": {
 		"autoname": "nizwa.nizwa.hooks.doc_events.contract.autoname",
-        "on_update": "nizwa.nizwa.hooks.doc_events.contract.on_update"
+        "on_submit": "nizwa.nizwa.hooks.doc_events.contract.on_submit"
 	}
 }
 
