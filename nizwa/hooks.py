@@ -124,6 +124,32 @@ app_license = "MIT"
 # 	}
 # }
 
+doc_events = {
+	"Retention Bonus": {
+		"on_submit": "nizwa.nizwa.hooks.doc_events.retension_bonus.on_submit",
+	}
+}
+
+fixtures = [
+    {
+    "doctype": "Custom Field",
+    "filters": [
+        [
+            "name",
+            "in",
+            [ 
+                "Retention Bonus-custom_section_break_7qtkn",
+                "Retention Bonus-custom_project",
+                "Retention Bonus-custom_cost_center",
+                "Retention Bonus-custom_column_break_djj1g",
+                "Retention Bonus-custom_shift_type",
+                "Attendance-custom_column_break_sldim",
+                "Attendance-custom_retention_bonus"
+            ]
+        ]
+    ]
+    }
+]
 # Scheduled Tasks
 # ---------------
 
