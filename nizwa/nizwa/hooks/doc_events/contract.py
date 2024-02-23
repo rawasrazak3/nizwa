@@ -8,7 +8,7 @@ def autoname(doc, method):
 
 def on_submit(doc, method):
     if doc.party_type == 'Customer':
-        if not frappe.db.exist("Price List", doc.name):
+        if not frappe.db.exists("Price List", doc.name):
             price_list_doc = frappe.new_doc("Price List")
             price_list_doc.price_list_name = doc.name
             price_list_doc.currency = "OMR"
