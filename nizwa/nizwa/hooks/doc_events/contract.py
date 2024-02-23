@@ -2,9 +2,9 @@ import frappe
 from datetime import date
 from frappe.model.naming import make_autoname
 
-def autoname(doc, method):
-    if doc.party_type == 'Customer':
-        doc.name = make_autoname(doc.custom_contract_no)
+def validate(doc, method):
+    if doc.party_type == 'Customer' and doc.is_new():
+        doc.name = doc.custom_contract_no
 
 def on_submit(doc, method):
     if doc.party_type == 'Customer':

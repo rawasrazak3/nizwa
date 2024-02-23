@@ -130,7 +130,7 @@ doc_events = {
         "before_validate": "nizwa.nizwa.hooks.doc_events.retension_bonus.before_validate"
 	},
     "Contract": {
-		"autoname": "nizwa.nizwa.hooks.doc_events.contract.autoname",
+		"validate": "nizwa.nizwa.hooks.doc_events.contract.validate",
         "on_submit": "nizwa.nizwa.hooks.doc_events.contract.on_submit"
 	}
 }
