@@ -144,6 +144,12 @@ app_license = "MIT"
 # 		"nizwa.tasks.monthly"
 # 	],
 # }
+scheduler_events = {
+	"daily": [
+		"nizwa.utils.send_supplier_document_expiry_notification"
+	]
+}
+
 
 # Testing
 # -------
