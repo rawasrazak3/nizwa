@@ -21,7 +21,7 @@ def send_supplier_document_expiry_notification():
         for item in supplier_doc.custom_documents:
             if item.expiry_date:
                 current_date = today()
-                if date_diff(item.expiry_date, current_date) == item.notification_time:
+                if date_diff(item.expiry_date, current_date) == item.notify_in_days:
                     send_supplier_notification(supplier_doc.name, item.document_type, item.document_number)
 
 

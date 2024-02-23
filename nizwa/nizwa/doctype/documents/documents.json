@@ -51,8 +51,13 @@
   },
   {
    "fieldname": "notification_time",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "How many days before expiry the system will send notification to the followers?"
+  },
+  {
+    "fieldname": "notify_in_days",
+    "fieldtype": "Int",
+    "label": "How many days before expiry the system will send notification to the followers?"
   },
   {
    "fieldname": "attachment",
@@ -68,7 +73,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-02-21 18:50:17.727061",
+ "modified": "2024-02-22 20:50:17.727061",
  "modified_by": "Administrator",
  "module": "NIZWA",
  "name": "Documents",
