@@ -6,7 +6,7 @@ def autoname(doc, method):
     if doc.party_type == 'Customer':
         doc.name = make_autoname(doc.custom_contract_no)
 
-def on_update(doc, method):
+def on_submit(doc, method):
     if doc.party_type == 'Customer' and doc.is_new():
         price_list_name =  doc.custom_contract_name + doc.custom_contract_no
         if not frappe.db.exist("Price List", price_list_name):
