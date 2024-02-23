@@ -1,5 +1,13 @@
 import frappe
 
+
+def validate(doc, method):
+    if doc.rate == 0:
+        employee = frappe.get_doc("Employee", doc.employee)
+        for item in employee.custom_bonus_details:
+            if item.salary_component == doc.salary_component:
+                doc.rate = item.rate
+
 def on_submit(doc, method):
     attendance = frappe.db.get_value("Attendance", {'attendance_date': doc.bonus_payment_date, 'employee': doc.employee}, 'name')
     if not attendance:

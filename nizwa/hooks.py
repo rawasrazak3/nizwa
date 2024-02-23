@@ -127,6 +127,7 @@ app_license = "MIT"
 doc_events = {
 	"Retention Bonus": {
 		"on_submit": "nizwa.nizwa.hooks.doc_events.retension_bonus.on_submit",
+        "validate": "nizwa.nizwa.hooks.doc_events.retension_bonus.validate"
 	}
 }
 
