@@ -1,5 +1,15 @@
 import frappe
 
+import frappe
+from frappe import _
+from frappe.model.document import Document
+from hrms.hr.utils import validate_active_employee
+from hrms.payroll.doctype.retention_bonus.retention_bonus import RetentionBonus
+
+
+class CustomRetentionBonus(RetentionBonus):
+    def validate(self):
+        validate_active_employee(self.employee)
 
 def before_validate(doc, method):
     if doc.bonus_amount == 0:
