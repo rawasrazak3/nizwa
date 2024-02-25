@@ -8,7 +8,7 @@ def validate(doc, method):
 
 def on_submit(doc, method):
     if doc.party_type == 'Customer':
-        if not frappe.db.exists("Price List", doc.name):
+        if not frappe.db.exists("Price List", {'custom_contract': doc.name}):
             price_list_doc = frappe.new_doc("Price List")
             price_list_doc.price_list_name = doc.custom_contract_name + "-" +  doc.custom_contract_no
             price_list_doc.currency = "OMR"
@@ -18,3 +18,8 @@ def on_submit(doc, method):
                 "country": "Oman"
             })
             price_list_doc.save(ignore_permissions=True)
+        if not frappe.db.exists("Project", {'custom_contract': doc.name}):
+            project_doc = frappe.new_doc("Project")
+            project_doc.project_name = doc.custom_contract_name + "-" +  doc.custom_contract_no
+            project_doc.custom_contract = doc.name
+            project_doc.save(ignore_permissions=True)

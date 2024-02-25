@@ -112,7 +112,8 @@ app_license = "MIT"
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 override_doctype_class = {
-	"Retention Bonus":"nizwa.nizwa.hooks.doc_events.retension_bonus.CustomRetentionBonus"
+	"Retention Bonus":"nizwa.nizwa.hooks.doc_events.retension_bonus.CustomRetentionBonus",
+    "Additional Salary":"nizwa.nizwa.hooks.doc_events.additional_salary.CustomAdditionalSalary"
 }
 
 # Document Events
