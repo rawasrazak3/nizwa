@@ -156,7 +156,11 @@ fixtures = [
                 "Retention Bonus-custom_column_break_djj1g",
                 "Retention Bonus-custom_shift_type",
                 "Attendance-custom_column_break_sldim",
-                "Attendance-custom_retention_bonus"
+                "Attendance-custom_retention_bonus",
+                "custom_sales_invoice_special_discount",
+                "custom_from_date",
+                "custom_to_date",
+                "custom_invoice_table",
             ]
         ]
     ]
