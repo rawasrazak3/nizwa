@@ -36,3 +36,14 @@ def send_supplier_notification(supplier, document_type, document_number, expire_
         'subject': document_type + "Document Expires Soon for Supplier" + supplier,
     }
     frappe.sendmail(**email_args)
+    
+
+@frappe.whitelist(allow_guest=True)
+def fetch_invoices(customer, from_date, to_date):
+    print("-----fetch Invoices -----")
+    sales_invoice_list = frappe.db.get_list('Sales Invoice', 
+        filters=[['posting_date', 'between', [from_date, to_date]], ['docstatus', '=', 1], ['customer', '=', customer]],
+        fields = ['name', 'grand_total']
+    )
+    print(sales_invoice_list)
+    return sales_invoice_list

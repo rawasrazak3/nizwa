@@ -30,6 +30,7 @@ app_license = "MIT"
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
 	"Sales Order" : "public/js/doctype_js/sales_order.js",
+    "Sales Invoice" : "public/js/doctype_js/sales_invoice.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -161,6 +162,9 @@ fixtures = [
                 "custom_from_date",
                 "custom_to_date",
                 "custom_invoice_table",
+                "Sales Invoice-custom_fetch_invoices",
+                "Sales Invoice-custom_discount_percentage",
+                "Sales Invoice-custom_previous_invoice_amount"
             ]
         ]
     ]

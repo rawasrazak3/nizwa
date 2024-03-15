@@ -19,7 +19,7 @@
   },
   {
    "fieldname": "grand_total",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Grand Total"
   }
@@ -27,7 +27,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-04 02:44:07.757507",
+ "modified": "2024-03-15 16:08:22.008473",
  "modified_by": "Administrator",
  "module": "NIZWA",
  "name": "Sales Invoice Discount",
