@@ -1,8 +1,14 @@
 frappe.ui.form.on("Sales Order Item", {
 	custom_days: (frm, cdt, cdn) => {
 		let item_row = locals[cdt][cdn];
-        if(item_row.custom_days != 0){
-            frappe.model.set_value(cdt, cdn, "rate", (item_row.custom_days * item_row.price_list_rate));
+        if(item_row.custom_days != 0 && frm.doc.custom_qty != 0){
+            frappe.model.set_value(cdt, cdn, "qty", (item_row.custom_days * item_row.custom_qty));
+        }
+	},
+    custom_qty: (frm, cdt, cdn) => {
+		let item_row = locals[cdt][cdn];
+        if(item_row.custom_days != 0 && frm.doc.custom_qty != 0){
+            frappe.model.set_value(cdt, cdn, "qty", (item_row.custom_days * item_row.custom_qty));
         }
 	},
     custom_from_date: (frm, cdt, cdn) => {
