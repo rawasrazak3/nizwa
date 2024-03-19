@@ -164,7 +164,8 @@ fixtures = [
                 "custom_invoice_table",
                 "Sales Invoice-custom_fetch_invoices",
                 "Sales Invoice-custom_discount_percentage",
-                "Sales Invoice-custom_previous_invoice_amount"
+                "Sales Invoice-custom_previous_invoice_amount",
+                "Sales Invoice-custom_old_invoice_discount_percentage"
             ]
         ]
     ]
