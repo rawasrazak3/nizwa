@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:employee_name",
+ "autoname": "naming_series:",
  "creation": "2024-03-21 14:42:20.500356",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,14 +10,30 @@
  "field_order": [
   "employee",
   "employee_name",
+  "employee_arabic",
   "position",
   "column_break_iebrq",
   "date",
   "joining_date",
+  "joining_date_arabic",
   "job_number",
   "function",
   "section_break_wmfcp",
-  "salary_component"
+  "salary_component",
+  "section_break_nnw8o",
+  "heading",
+  "section_break_qc5pg",
+  "content_1",
+  "section_break_eob8m",
+  "content_2",
+  "content_3",
+  "content_4",
+  "content_5",
+  "column_break_q4dgh",
+  "total_in_arabic",
+  "whomsoever",
+  "naming_series",
+  "amended_from"
  ],
  "fields": [
   {
@@ -30,8 +46,7 @@
    "fetch_from": "employee.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
-   "label": "Employee Name",
-   "unique": 1
+   "label": "Employee Name"
   },
   {
    "fetch_from": "employee.designation",
@@ -45,7 +60,7 @@
   },
   {
    "fieldname": "date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Date"
   },
   {
@@ -73,15 +88,98 @@
    "fieldtype": "Table",
    "label": "Salary Component",
    "options": "Salary Certificate Table"
+  },
+  {
+   "fieldname": "section_break_nnw8o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heading",
+   "fieldtype": "Data",
+   "label": "Heading"
+  },
+  {
+   "fieldname": "content_1",
+   "fieldtype": "Text Editor",
+   "label": "Content 1"
+  },
+  {
+   "fieldname": "content_2",
+   "fieldtype": "Text Editor",
+   "label": "Content 2"
+  },
+  {
+   "fieldname": "content_3",
+   "fieldtype": "Text Editor",
+   "label": "Content 3"
+  },
+  {
+   "fieldname": "content_4",
+   "fieldtype": "Text Editor",
+   "label": "Content 4"
+  },
+  {
+   "fieldname": "content_5",
+   "fieldtype": "Text Editor",
+   "label": "Content 5"
+  },
+  {
+   "fieldname": "employee_arabic",
+   "fieldtype": "Data",
+   "label": "Employee Name in Arabic"
+  },
+  {
+   "fieldname": "column_break_q4dgh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whomsoever",
+   "fieldtype": "Data",
+   "label": "to whomsoever it may concern"
+  },
+  {
+   "fieldname": "joining_date_arabic",
+   "fieldtype": "Data",
+   "label": "Joining Date in Arabic"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "SAL-.YY.-.####."
+  },
+  {
+   "fieldname": "total_in_arabic",
+   "fieldtype": "Data",
+   "label": "Total in Arabic"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salary Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_qc5pg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_eob8m",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-23 16:05:39.960229",
+ "modified": "2024-05-28 12:31:30.682414",
  "modified_by": "Administrator",
  "module": "NIZWA",
  "name": "Salary Certificate",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
